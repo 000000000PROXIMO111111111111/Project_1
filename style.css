@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      to right,
+      pink 0%,
+      pink 50%,
+      paleturquoise 50%,
+      paleturquoise 100%
+    );
+  }
+header, nav, main, footer {
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

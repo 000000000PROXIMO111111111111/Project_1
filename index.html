@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Link to your style.css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap CSS (replace with the correct Bootstrap version) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to your styles.scss file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
 </head>
-<body>
 
-<!-- Main Content Area -->
-<main>
-  <header>
-    <h1>Hello David!</h1>
-  </header>
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="rounded-cards p-3">
+        <h1 class="text-center mb-4">FAQ</h1>
+        <section>
+            <h2>About Us</h2>
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-  <section>
-    <h2>About Us</h2>
-    <p>This is a brief description of your website or organization. Feel free to modify this text.</p>
-  </section>
-
-  <!-- Add more sections as needed -->
-
-</main>
-
-<!-- Add any additional scripts here -->
-
+    <!-- Link to your script.js file -->
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -30,16 +30,17 @@ body {
     padding: 1.5rem; /* Adjust padding as needed */
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;/* Here we ensure content does not overflow*/
 }
 /* Standard styles without motion */
 .my-element {
     transition: background-color 0.3s ease;
   }
 
-  .container {
+  .container { /* Note the width for this container if where we contain the accordions*/
     margin: 0 auto;
     padding: 4rem;
-    width: 48rem;
+    width: 40rem;
   }
   
   .accordion .accordion-item {
@@ -125,6 +126,7 @@ body {
   .accordion button[aria-expanded='true'] + .accordion-content {
     opacity: 1;
     max-height: 9em;
+    overflow-y: auto; /*This enables verticla scrolling if content is to large*/
     transition: all 200ms linear;
     will-change: opacity, max-height;
   }

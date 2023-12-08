@@ -8,20 +8,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Link to your styles.scss file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to your script.js file -->
+    <script src="script.js"></script>
     <!-- Add any additional meta tags, stylesheets, or scripts here -->
 </head>
 
 <body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="rounded-cards p-3">
-        <h1 class="text-center mb-4">FAQ</h1>
         <section>
-            <h2>About Us</h2>
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
+            <div class="faq_container">
+                <h1 class="text-centered left">FAQs</h1>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="fa  flse">
+                            <span class="accordion-title bold-text">What is an accordion-styled FAQ?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>An accordion-styled FAQ is a user-friendly interface that organizes frequently asked questions into collapsible sections, allowing users to expand and collapse content at their convenience. This design enhances user experience by presenting information in a concise and visually appealing manner.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="accordion">
                     <div class="accordion-item">
                         <button id="accordion-button-1" aria-expanded="false">
-                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                            <span class="accordion-title bold-text">How can I implement a split background in my accordion FAQ using HTML and CSS?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Achieving a split background involves creating a container for the FAQ and applying CSS styling to create two distinct background colors. By carefully selecting and positioning elements, developers can achieve an eye-catching split background effect that enhances the overall aesthetic of the accordion-styled FAQ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title bold-text">Why is the moon sometimes out during the day?</span>
                             <span class="icon" aria-hidden="true"></span>
                         </button>
                         <div class="accordion-content">
@@ -32,44 +54,23 @@
                 <div class="accordion">
                     <div class="accordion-item">
                         <button id="accordion-button-1" aria-expanded="false">
-                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                            <span class="accordion-title bold-text">Why is JavaScript necessary for interactive accordion FAQs?</span>
                             <span class="icon" aria-hidden="true"></span>
                         </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>JavaScript plays a crucial role in making accordion FAQs interactive. It enables dynamic behavior such as expanding and collapsing sections with smooth animations, enhancing the user experience. JavaScript allows developers to respond to user interactions, making the accordion FAQ a responsive and engaging component on websites.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion-item">
                         <button id="accordion-button-1" aria-expanded="false">
-                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                            <span class="accordion-title bold-text">Are there any best practices for creating accessible accordion FAQs?</span>
                             <span class="icon" aria-hidden="true"></span>
                         </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false">
-                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
-                            <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false">
-                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
-                            <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>Yes, adhering to web accessibility standards is crucial. Ensure proper HTML semantics, use ARIA attributes for screen readers, and test the accordion on various devices and browsers to guarantee a seamless experience for all users. Prioritizing accessibility ensures that everyone, including those with disabilities, can easily navigate and benefit from your interactive accordion FAQ.</p>
                         </div>
                     </div>
                 </div>
@@ -77,8 +78,6 @@
         </section>
     </div>
 
-    <!-- Link to your script.js file -->
-    <script src="script.js"></script>
 </body>
 
 </html>

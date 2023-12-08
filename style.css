@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
 :root {
-  --bg: #fff;
-  --text: #7288a2;
-  --gray: #4d5974;
-  --lightgray: #e5e5e5;
-  --blue: #03b5d2;
+  --bg: #ce0000;
+  --text: #000000;
+  --gray: #c79393;
+  --lightgray: #d1d1d1;
+  --blue: #000000;
+  --button: #7939b5;
+
 }
 
 * {
@@ -19,16 +21,21 @@ body {
         to bottom,
         pink 0%,
         pink 40%, /* Adjust this percentage for the bottom color of the split */
-        paleturquoise 40%, /* Adjust this percentage for the top color of the split */
-        paleturquoise 100%
+        rgb(253, 242, 255) 40%, /* Adjust this percentage for the top color of the split */
+        rgb(253, 242, 255) 100%
     );
 }
 
+.faq_container { /* Note the width for this container is where the accordion faq is held*/
+  margin: 0 auto;
+  padding: 4rem;
+  width: 40rem;
+}
 .rounded-cards {
-    width: 40rem;
+    width: 40;/* Set the width 100% */
     background-color: white;
-    padding: 1.5rem; /* Adjust padding as needed */
-    border-radius: 30px;
+    padding: 0.5rem; /* Adjust padding as needed */
+    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;/* Here we ensure content does not overflow*/
 }
@@ -37,11 +44,10 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  .container { /* Note the width for this container if where we contain the accordions*/
-    margin: 0 auto;
-    padding: 4rem;
-    width: 40rem;
-  }
+
+.accordion-title{
+  font-weight: bold;
+}
   
   .accordion .accordion-item {
     border-bottom: 1px solid var(--lightgray);
@@ -57,7 +63,7 @@ body {
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    color: var(--text);
+    color: var(--button);
     font-size: 1.15rem;
     font-weight: 400;
     border: none;

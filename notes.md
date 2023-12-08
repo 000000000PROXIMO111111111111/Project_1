@@ -16,3 +16,6 @@ Accordion style card
 Accessability
 - Use correct headings tages
 - Screen reader only text for card titles/username
+
+color: rgb(253, 242, 255) 40%, /* Adjust this percentage for the bottom color of the split */
+        rgb(253, 242, 255) 100%
